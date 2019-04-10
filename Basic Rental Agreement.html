@@ -1,0 +1,424 @@
+<!DOCTYPE html><html><head>
+      <title>Basic Rental Agreement</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///C:\Users\JGarza\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.3.8\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <style> 
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+ 
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview   ">
+      <div><h1 class="mume-header" id="lease">Lease</h1>
+
+<p>Basic Rental Agreement or residential lease</p>
+<h2 class="mume-header" id="section-1-basic-lease-agreement">SECTION 1: BASIC LEASE AGREEMENT:</h2>
+
+<p>Landlord ________________________________________________</p>
+<p>Tenant#1 ________________________________________________</p>
+<p>Tenant#2 ________________________________________________</p>
+<p>The landlord (above) agrees to rent the use of 1 room within<br>
+(address) ________________________________________________<br>
+(address) ________________________________________________<br>
+(address) ________________________________________________</p>
+<p>The Term of this agreement will start on<br>
+(start date) ________________________________________________<br>
+(end date)   ________________________________________________</p>
+<p>The tenant(s) (above) agrees to pay<br>
+(rent) ____________________________________________<br>
+(frequency) ________________________________________________</p>
+<p>(tenant#1 inital) ____________________<br>
+(tenant#2 inital) ____________________</p>
+<h2 class="mume-header" id="section-2-rent">SECTION 2: RENT</h2>
+
+<p>Rent is due between ____________________  and ____________________   day of each calendar month.</p>
+<p>Rent must be paid using</p>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Persional Check<br>
+-Tenant(s) are responsible for making sure there is enough funds in his/her/their account.</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Money Order</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Cashier&apos;s Check made payable to ____________________.</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Zelle - Transfer<br>
+-Tenant(s) are/is responible for sending payments using the correct phone or email address.</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Bank or Wire Transfer</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Cash - handed and counted in person.</li>
+</ul>
+<p><strong>Late fees are strictly enforced</strong><br>
+If Tenant(s) occupies the premises beyond the term of this lease without agreement with the landlord then Tenant will be obligated to pay a full month rent payment or be evicted from the property.</p>
+<p>A late payment charge of<br>
+(late fee) ________________________________________________<br>
+will also be due if the rent is not paid to landlord within the time frame above.</p>
+<p>Rent will be considered late when (one of the following is true)</p>
+<ul>
+<li>The <strong>full</strong> payment amount has not been paid within the agreed upon time frame.</li>
+</ul>
+<p><strong>partial rent will not be accepted</strong></p>
+<p>(tenant#1 inital) ____________________<br>
+(tenant#2 inital) ____________________</p>
+<h2 class="mume-header" id="section-3-restrictions-on-use">SECTION 3: RESTRICTIONS ON USE:</h2>
+
+<p>no Temporary guests, unless agreed to by the landlord, will stay over for:</p>
+<ul>
+<li>ten consecutive nights, or</li>
+<li>more than nine nights in three week period, or</li>
+<li>all the weekends of a given month plus three weeknights</li>
+</ul>
+<p>The number of temporary guest must not exceed<br>
+(number) ________________________________________________<br>
+at a time.</p>
+<p>The Tenant may not:<br>
+Negligently or intentionally damage the premises or permit them to be damaged.<br>
+Park or drive any motor vehicle on the lawn.<br>
+Do or permit any other act, which is detrimental to the welfare of the premises or the neighborhood.<br>
+Inoperable vehicles not to be left on the street or property for more than 7 days.</p>
+<p>(tenant#1 inital) ____________________<br>
+(tenant#2 inital) ____________________</p>
+<h2 class="mume-header" id="section-4-condition-of-premises">SECTION 4: CONDITION OF PREMISES:</h2>
+
+<p>Tenant acknowledges that he/she/they has examined the premises and that said premises, all furnishings, fixtures, plumbing, heating, electrical facilities, appliances, all items provided by the landlord are clean, and in satisfactory condition. Tenant agrees to keep the premises and all items in good order and good condition and to immediately pay for costs to repair and/or replace any portion of the above damage by Tenant, his/her/their guests and/or invitees, except as provided by law.</p>
+<p>(tenant#1 inital) ____________________<br>
+(tenant#2 inital) ____________________</p>
+<h2 class="mume-header" id="section-5-property-maintenance">SECTION 5: PROPERTY MAINTENANCE:</h2>
+
+<p>Tenant shall deposit all garbage and waste in a clean and sanitary manner into the proper receptacles and shall cooperate in keeping the garbage area neat and clean. Tenant shall be responsible for disposing of items of such size and nature as are not normally acceptable be the garbage hauler. Tenant shall not paint, wallpaper, alter or redecorate, change or install locks, screws, fastening devices, large nails, or adhesive materials, place signs, display or other exhibits, on or in any portion of the premises without the written consent of the landlord.</p>
+<p>Tenant shall:<br>
+Be responsible for keeping the kitchen and bathroom drains free of things that tend to cause clogging of the drain.<br>
+Tenant shall pay for the cleaning out of plumbing fixtures that may need to be cleared of stoppage and for the expense or damage caused by stopping of waste pipes or overflow from bathtubs, wash basins, or sinks.</p>
+<p>Tenant shall pay for the complete replacement of windows should the Tenant or guest of, damage and/or break one. Damages or repairs made due to Tenant lack of regular maintenance will result in Tenant paying for repairs.</p>
+<p>(tenant#1 inital) ____________________<br>
+(tenant#2 inital) ____________________</p>
+<h2 class="mume-header" id="section-6-utilities">SECTION 6: UTILITIES:</h2>
+
+<p>Utilities will be paid by the landlord.<br>
+if there is any negligent and/or malicious use of resources that cause the utility bill to be abnormally high the tentant will be asked to pay a portion or all of the utilities for that month.</p>
+<p>Utilities and/or resources should only be used for residential purposes unless agreed upon my the landlord first.</p>
+<p>Utilities/resources include but not limited to:<br>
+Water, Heater/AC, Eletricity, Internet Bandwith.</p>
+<p>(tenant#1 inital) ____________________<br>
+(tenant#2 inital) ____________________</p>
+<h2 class="mume-header" id="section-7-right-of-entry-and-inspection">SECTION 7: RIGHT OF ENTRY AND INSPECTION:</h2>
+
+<p>Landlord may enter, inspect, and/or repair the premises at any time, and may enter for the purpose of normal inspection and repairs, suspicion of illegal activity or access to landlord&#x2019;s property. landlord is permitted to make all alterations, repairs, and maintenance.</p>
+<p>(tenant#1 inital) ____________________<br>
+(tenant#2 inital) ____________________</p>
+<h2 class="mume-header" id="section-8-insurance">SECTION 8: INSURANCE:</h2>
+
+<p>Tenant(s) acknowledges that landlord&apos;s insurance DOES NOT cover personal property damage caused by fire, theft, rain, war, acts of god, acts of others, and/or any other causes, nor shall Owner be held liable for such losses. Tenant(s) are/is advised to obtain his own insurance policy to cover any personal losses.</p>
+<p>Landlord shall not be liable for loss, injury, or damages to the personal property or person of the tenant(s), his/her/their guests or occupants, caused by fire, theft, burglary, malicious acts, riots, insurrection, civil commotion,the elements, bursting, failure or malfunction of plumbing, electrical, gas or heating installations or other furnishings, fixtures, or neglect of landlord/owner, tenant(s), or any other people, or uncontrollable natural or supernatural forces.</p>
+<p>(tenant#1 inital) ____________________<br>
+(tenant#2 inital) ____________________</p>
+<h2 class="mume-header" id="section-9-pets">SECTION 9: PETS:</h2>
+
+<p>Tenant(s) are allows to have a maximum of<br>
+(number) ________________________________________________<br>
+pet(s).</p>
+<p>Each pet will require a PET DEPOSIT of<br>
+(number) ________________________________________________.</p>
+<p>Only the following Pet(s) will be allowed on premises<br>
+(type) ____________________ named ____________________.</p>
+<p>If landlord finds a pet (other than the one(s) above) on the premises either visiting or permanent, tenant(s) may be evicted or penalized the above listed deposit IMMEDIATELY.</p>
+<p>If tenant(s) do not take care of their pet(s) basic needs and/or clean up after them, the tenant(s) may be evicted or penalized the above listed deposit IMMEDIATELY.</p>
+<p>(tenant#1 inital) ____________________<br>
+(tenant#2 inital) ____________________</p>
+<h2 class="mume-header" id="section-10-inventory">SECTION 10: INVENTORY:</h2>
+
+<p>The premises contains the following items that the tenant(s) may use but do not own. These items must stay on the premises when the lease has expired.</p>
+<p>All tenant(s) agree to not use or borrow other people&apos;s personal item(s) without the approval of the person who owns the property. Any exception(s) to this rule will be clearly stated and agreed upon, and the roommate who owns the property retains the right to change his/her mind about sharing his/her property. Any personal property that is borrowed will be used respectfully and returned in the same condition. If any damage is done to a roommate&#x2019;s personal property, the roommate(s) responsible for causing the damage will compensate the roommate who owns the personal property for his/her loss.</p>
+<p>(tenant#1 inital) ____________________<br>
+(tenant#2 inital) ____________________</p>
+<h2 class="mume-header" id="section-11-assignmentsubletting">SECTION 11: ASSIGNMENT/SUBLETTING:</h2>
+
+<p>Subletting/Roommates:<br>
+Tenant shall not lease, sub-lease, rent, assign, take in roommates or give access to any portion of the premises without the prior written consent of the Landlord.</p>
+<p>(tenant#1 inital) ____________________<br>
+(tenant#2 inital) ____________________</p>
+<h2 class="mume-header" id="section-12-noise-and-other-nuisance">SECTION 12: NOISE AND OTHER NUISANCE:</h2>
+
+<p>All activities of the tenant(s) or those of his/her/their guest or occupants are to be conducted in a quiet, dignified manner so as to not anny or disurb neighbors or create a nuisance in any way. Tenant(s) agrees to use premises in a lawful manner and agrees not to violate any City, Country, State or Federal law or ordinance in the use of said premises. The premises are to be used for residential purposes only and are not to be used for any commercial enterprise or for any purpose while would injure the general premises, or its occupants in any way.</p>
+<p>(tenant#1 inital) ____________________<br>
+(tenant#2 inital) ____________________</p>
+<h2 class="mume-header" id="section-13-early-termination">SECTION 13: EARLY TERMINATION:</h2>
+
+<p>If tenant(s) (one of othe following)</p>
+<ul>
+<li>terminates this tenancy during the lease term</li>
+<li>are eviected from premises</li>
+<li>or leave premises without notice</li>
+</ul>
+<p>then tenant(s) are responsible for paying for the entire month where they stayed on the premises for (number) ____________________  day(s) or more.</p>
+<p>(tenant#1 inital) ____________________<br>
+(tenant#2 inital) ____________________</p>
+<h2 class="mume-header" id="section-14-datingsignificant-other">SECTION 14: DATING/SIGNIFICANT OTHER:</h2>
+
+<p>Tenant(s) agree that they are in a relationship and that if their relationship ends they will both be evicted from the premises.</p>
+<p>Tenant(s) agree that if one of them is evicted from the premises the other will also be evicted from the premises.</p>
+<p>(tenant#1 inital) ____________________<br>
+(tenant#2 inital) ____________________</p>
+<h2 class="mume-header" id="section-15-violence-or-threats-of-violence">SECTION 15: VIOLENCE OR THREATS OF VIOLENCE</h2>
+
+<p>Tenant(s) will not use any violence, threats of violence, or intimitation aginst the landlord.</p>
+<p>Any damages (medial, property, or other) will be paid for by tenant(s).</p>
+<p>(tenant#1 inital) ____________________<br>
+(tenant#2 inital) ____________________</p>
+<h2 class="mume-header" id="section-16-break-agreement">SECTION 16: BREAK AGREEMENT</h2>
+
+<p>Tenant(s) may be evicted, penalized, or be charged fees if any part of this agreement is broken.</p>
+<p>(tenant#1 inital) ____________________<br>
+(tenant#2 inital) ____________________</p>
+<h2 class="mume-header" id="entire-agreement">ENTIRE AGREEMENT:</h2>
+
+<p>This Agreement constitutes the entire agreement between Owner and Tenant. No oral agreements have been entered into and all modifications or notices shall be in writing to be valid. The undersigned Tenant have read and understood this Agreement and hereby acknowledge receipt of a copy of the Rental Agreement.</p>
+<h3 class="mume-header" id="tenant1"><strong>tenant#1</strong></h3>
+
+<p>Tenant Print:<br>
+.________________________________________________</p>
+<p>Tenant Signature:<br>
+.________________________________________________</p>
+<p>Date: __________________</p>
+<h4 class="mume-header" id="tenant1-contact-information">TENANT#1 CONTACT INFORMATION:</h4>
+
+<p>Primary Phone:<br>
+.________________________________________________</p>
+<p>Primary Email:<br>
+.________________________________________________</p>
+<p>Primary SSN:<br>
+.________________________________________________</p>
+<p>Secondary Phone:<br>
+.________________________________________________</p>
+<p>Secondary Email:<br>
+.________________________________________________</p>
+<h3 class="mume-header" id="tenant2"><strong>tenant#2</strong></h3>
+
+<p>Tenant Print:<br>
+.________________________________________________</p>
+<p>Tenant Signature:<br>
+.________________________________________________</p>
+<p>Date: __________________</p>
+<h4 class="mume-header" id="tenant2-contact-information">TENANT#2 CONTACT INFORMATION:</h4>
+
+<p>Primary Phone:<br>
+.________________________________________________</p>
+<p>Primary Email:<br>
+.________________________________________________</p>
+<p>Primary SSN:<br>
+.________________________________________________</p>
+<p>Secondary Phone:<br>
+.________________________________________________</p>
+<p>Secondary Email:<br>
+.________________________________________________</p>
+</div>
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

@@ -1,5 +1,8 @@
 <!--
 Version: 1.0
+Written for Terisha Stwart and Serjay Kavabbanov
+2018-2019ish
+
 -->
 
 # Lease
@@ -37,11 +40,12 @@ Rent is due between ____________________  and ____________________   day of each
 
 Rent must be paid using  
 - [ ] Persional Check  
-        Tenant(s) are responsible for making sure there is enough funds in his/her/their account.
+        -Tenant(s) are responsible for making sure there is enough funds in his/her/their account.
 - [ ] Money Order  
 - [ ] Cashier's Check made payable to ____________________.  
 - [ ] Zelle - Transfer   
-        Tenant(s) are/is responible for sending payments using the correct phone or email address.
+        -Tenant(s) are/is responible for sending payments using the correct phone or email address.
+- [ ] Bank or Wire Transfer
 - [ ] Cash - handed and counted in person.
 
 
